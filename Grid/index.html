@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* grid-template-columns: 40% 30% 30%; */
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+            grid-gap: 1em; /* cach viet gop line 12 & 12 lai */
+        }
+        .wrapper > div{
+            background: #eee;
+            padding: 1rem;
+        }
+        .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime id et doloribus ut architecto at iste tempora corporis harum quas minus voluptatum nesciunt suscipit ratione itaque sed doloremque, ex similique perferendis aliquid rem magnam? Placeat, possimus suscipit maxime qui facere pariatur, quos repellat minima delectus voluptate tempora iste doloremque magnam autem eveniet blanditiis laudantium nihil, odio consequatur ad sint ea dolores eos! Quo facilis cum illum veniam quisquam aliquid. Atque, commodi quod! Amet error eveniet iste dolorem, reprehenderit ducimus? Laborum.
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates a eos quibusdam in, minus officiis assumenda voluptas consequuntur. Voluptates, veritatis doloremque non tempora delectus ipsum assumenda odio alias culpa ab!
+        </div>
+
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime id et doloribus ut architecto at iste tempora corporis harum quas minus voluptatum nesciunt suscipit ratione itaque sed doloremque, ex similique perferendis aliquid rem magnam? Placeat, possimus suscipit maxime qui facere pariatur, quos repellat minima delectus voluptate tempora iste doloremque magnam autem eveniet blanditiis laudantium nihil, odio consequatur ad sint ea dolores eos! Quo facilis cum illum veniam quisquam aliquid. Atque, commodi quod! Amet error eveniet iste dolorem, reprehenderit ducimus? Laborum.
+        </div>
+        <div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates a eos quibusdam in, minus officiis assumenda voluptas consequuntur. Voluptates, veritatis doloremque non tempora delectus ipsum assumenda odio alias culpa ab!
+        </div>
+
+    </div>
+</body>
+</html>
